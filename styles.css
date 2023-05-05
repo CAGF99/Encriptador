@@ -1,0 +1,202 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-rigth {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.logo {
+  margin: 2.5em;
+  width: 31.09px;
+  height: 48px;
+}
+
+.inputMessage {
+  width: 100%;
+  height: 60%;
+  margin-left: 8em;
+  font-weight: bold;
+  border: none;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonEncriptar {
+  background-color: #0a3871;
+  color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 24px;
+  width: 24em;
+  height: 67px;
+  margin: 5em 5em 5em 10em;
+  cursor: pointer;
+}
+
+.buttonDesencriptar {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  box-sizing: border-box;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  width: 24em;
+  height: 67px;
+  margin: 5em 0 5em 0;
+  cursor: pointer;
+}
+
+.section-encriptador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: 30vw;
+  height: 95vh;
+  border-radius: 2em;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  margin: 1em 3em 1em 5em;
+}
+
+.section-encriptador p {
+  color: rgb(245, 127, 111);
+}
+
+.msjEncriptado,
+.msjDesencriptado {
+  margin: 9.5em 0 0 0;
+  border: none;
+}
+.muñeco {
+  margin: 60px 32px 100px 32px;
+  width: 336px;
+  height: 304px;
+}
+
+.buttonCopiar {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  box-sizing: border-box;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+}
+
+@media screen and (max-width: 840px) {
+  .todo {
+    flex-direction: column;
+  }
+  .section-rigth {
+    width: 80%;
+  }
+
+  .inputMessage {
+    margin-left: 4em;
+    height: 50%;
+    font-size: 1.5em;
+  }
+  .botones{
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonEncriptar,
+  .buttonDesencriptar {
+    height: 4em;
+    margin-bottom: 3em;
+  }
+
+  .section-encriptador {
+    width: 80%;
+    height: 40vh;
+    justify-content: center;
+  }
+
+  .section-encriptador p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .section-encriptador .sugerencia {
+    font-size: 1.5em;
+    color: #000000;
+  }
+  .muñeco {
+    display: none;
+  }
+  .msjEncriptado,
+  .msjDesencriptado {
+    margin: 0 auto;
+    width: 65%;
+    font-size: 1.7em;
+    border: none;
+  }
+  .buttonCopiar {
+    margin: 1em 0 0 0;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .inputMessage {
+    margin-left: 2em;
+    height: 300px;
+    font-size: 1.5em;
+  }
+
+  .botones{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 2em;
+  }
+
+  .buttonEncriptar{
+    height: 4em;
+    margin: 2em 1em 1em 2em ;
+  }
+  .buttonDesencriptar {
+    height: 4em;
+    margin: 0 1em 2em 2em ;
+  } 
+  .section-encriptador {
+    width: 80%;
+    height: 35vh;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2em;
+  }
+
+  .section-encriptador p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .section-encriptador .sugerencia {
+    font-size: 1em;
+    color: rgba(#000000,0,0,0.2);
+  }
+
+  .buttonCopiar {
+    margin: 4em 0 0 0;
+    width: 80%;
+  }
+}
