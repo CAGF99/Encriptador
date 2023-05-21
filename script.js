@@ -61,13 +61,13 @@ const validarTrue = () => {
 
 const validarFalse = () => {
   const newParrafo = document.createElement("p");
-  newParrafo.innerHTML = "Ingrese texto con minuscula";
+  newParrafo.innerHTML = "Ingrese texto con minuscula y sin acentos";
 
   sectionEncriptador.appendChild(newParrafo);
 };
 
 const validar = () => {
-  const regex = /^[a-z]/;
+  const regex = /^[a-z\s]+$/;
   regex.test(palabra.value) ? validarTrue() : validarFalse();
 };
 
@@ -130,7 +130,7 @@ const validarTrueDesencriptando = () => {
 };
 
 const validarDesencriptar = () => {
-  const regex = /^[a-z]/;
+  const regex = /^[a-z\s]+$/;
   regex.test(palabra.value) ? validarTrueDesencriptando() : validarFalse();
 };
 
